@@ -1,0 +1,33 @@
+[% META appkitfeature_tablesorter = 1 %]
+<table class="tablesorter">
+    <tr>
+        <th>
+            ODS code
+        </th>
+        <th>
+            Name
+        </th>
+        <th>
+            Postcode
+        </th>
+        <th>
+            Contact
+        </th>
+    </tr>
+    [% FOREACH org IN organisations %]
+        <tr>
+            <td>
+                [% org.code %]
+            </td>
+            <td>
+                [% org.name %]
+            </td>
+            <td>
+                [% org.postcode %]
+            </td>
+            <td>
+                [% org.contact_phone_number %]
+            </td>
+        </tr>
+    [% END %]
+</table>

@@ -1,0 +1,7 @@
+<h1>Upload CSV</h1>
+
+<p>Select a CSV file to upload.</p>
+
+[% form.render | none %]
+
+<p>Please be aware this can take several minutes.</p>
