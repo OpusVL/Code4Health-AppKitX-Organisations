@@ -4,6 +4,8 @@ use Moose::Role;
 use CatalystX::InjectComponent;
 use namespace::autoclean;
 
+with 'OpusVL::AppKit::RolesFor::Plugin';
+
 our $VERSION = '0.02';
 
 after 'setup_components' => sub {
